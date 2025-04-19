@@ -1,6 +1,6 @@
 import React from 'react'
 import nav_img from "../assets/serene_fully_transparent.png"
-
+import {Link}  from "react-router-dom"
 function Header() {
   return (
     <>
@@ -27,24 +27,24 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" href="home.html">
+                  <Link className="nav-link" to="/">
                     home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="About.html">
+                  <Link className="nav-link" to="/about">
                     about
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="services.html">
+                  <Link className="nav-link" to="/services">
                     services
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contactus.html">
+                  <Link className="nav-link" to="/contact"  >
                     contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <a className="sign" href="regiester.html">

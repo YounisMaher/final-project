@@ -4,8 +4,9 @@ import React from 'react'
 function Rpeat(props) {
   return (
     <>
-      <section class="home3">
-        <img src={props.img} alt="" />
+    <section className="home3" style={{ backgroundImage: `url(${props.img})` }}>
+  
+{/* <img src={props.img} alt="" /> */}
         <h1>{props.tittle}</h1>
         <h1>{props.tittle2}</h1>
         {/* <h1>sharm el sheikh & places to stay</h1>

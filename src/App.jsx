@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -9,15 +10,19 @@ import Contact from "./Contact/Contact";
 import Single from "./Single/Single";
 function App() {
   return (
-    <div>
-      <Header />
-      {/* <Single/> */}
-      <Home />
-      {/* <About /> */}
-      {/* <Services /> */}
-      {/* <Contact /> */}
-      <Footer />
-    </div>
+    <Router>
+     <Header/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/singel" element={<Single />} />
+
+      </Routes>
+      <Footer/>
+    </Router>
+
   );
 }
 
