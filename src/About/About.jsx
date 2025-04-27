@@ -1,14 +1,18 @@
 import React from 'react';
-
+import hotelImage from '../assets/18.jpg'
+import"./about.css"
 function About() {
   return (
     <>
       <section className="about-img">
         <div className="container">
-          {/* <section className="about-img"> */}
+          <section className="about-img" style={{backgroundImage: `url(${hotelImage})`
+}}> 
           <span>about us</span>
+          </section>
         </div>
       </section>
+      
 
       <section className="about-content">
         <h3>Who We Are</h3>
